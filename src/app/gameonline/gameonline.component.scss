@@ -1,0 +1,41 @@
+
+
+
+  //Main content
+
+  .background{
+    background-color: rgba(15, 15, 15, 0.966);
+    min-height: 1200px;
+    margin-top: -20px
+  
+  }
+
+  .mat-align-tabs,.label{
+    color: yellow;
+  }
+
+
+  .mat-card-image{
+    height: 250px
+  }
+  
+  .example-header-image {
+    background-image: url('https://cdn2.vectorstock.com/i/1000x1000/68/31/video-game-icon-vector-5246831.jpg');
+    background-size: cover;
+  }
+
+
+  .matcard{
+    min-height: 470px;
+  }
+
+  .title{
+      color: orange;
+      font-family: Courier New, Courier, monospace;
+      font-weight: bold;
+      text-align : center;
+  }
+
+ .item{
+    padding: 10px;
+  }

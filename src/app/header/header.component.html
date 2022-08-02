@@ -1,0 +1,49 @@
+<div class="container">
+  <mat-toolbar fxLayout>
+    <div fxFlex="17%" fxFlex.xs=10% style="color:yellow">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu class="menu" #menu="matMenu">
+        <button mat-menu-item [routerLink]="'gameonline'">Game online</button>
+        <button mat-menu-item>Game offline</button>
+        <button mat-menu-item>Application</button>
+      </mat-menu>
+      <span class="title" fxHide.sm fxHide.xs >Web Game</span>
+      <button mat-icon-button aria-label="Example icon-button with bolt icon" fxHide.md fxHide.sm fxHide.xs>
+        <mat-icon>offline_bolt</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Example icon-button with games icon" fxHide.md fxHide.sm fxHide.xs>
+        <mat-icon>games</mat-icon>
+      </button>
+    </div>
+
+    <div fxLayoutGap="15px" fxFlex="20%" fxHide.xs>
+      <button mat-raised-button>Game Hot</button>
+      <button mat-raised-button>New Game</button>
+      <button mat-raised-button fxHide.sm>Introduce</button>
+    </div>
+
+    <div fxFlex="40%" fxLayoutAlign="end" class="searchBar">  
+      <form class="example-form">
+        <mat-form-field>
+          <mat-label>Search Here</mat-label>
+          <input type="string" matInput placeholder="">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </form>
+    </div>
+
+    <div fxLayoutAlign="end" fxFlex="25%">
+      <span class="nameAcount">Account </span>
+      <button mat-mini-fab aria-label="Example icon button with a person icon" color="primary" [matMenuTriggerFor]="accountMenu">
+        <mat-icon> person</mat-icon>
+      </button>
+      <mat-menu class="menuAccount" #accountMenu="matMenu">
+        <button mat-menu-item>Login</button>
+        <button mat-menu-item [routerLink]="''">Logout</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  <img src="assets/background.jpg" alt="background" class="imgBackground">
+</div>

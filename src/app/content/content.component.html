@@ -1,0 +1,362 @@
+<div class="background">
+  <mat-tab-group mat-align-tabs="center" class="label">
+    <mat-tab label="Game Offline">
+      <div class="container"
+        fxLayout fxLayoutGap="20px" fxLayoutAlign="start"
+        fxLayout.md="row wrap" fxLayoutGap.md="22px" fxLayoutAlign.md="start" 
+        fxLayout.sm="row wrap" fxLayoutGap.sm="10px" fxLayoutAlign.md="start" 
+        fxLayout.xs="column" 
+        >
+        <div fxFlex="25%" fxFlex.md="31%" fxFlex.sm="48%"  fxFlex.xs="100%">
+          <mat-card class="matcard">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Battle Field 2042</mat-card-title>
+              <mat-card-subtitle>Game offline</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/battlefield.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                Battle Field is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-raised-button color="accent" [routerLink]="'detail'">Detail</button>
+              <button mat-raised-button color="warn"  (click)="openDialog('1000ms', '0ms')">Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.md="31%" fxFlex.sm="48%"  fxFlex.xs="100%">
+          <mat-card class="matcard">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Assassin creed Vahalla</mat-card-title>
+              <mat-card-subtitle>Game offline</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/assassin.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                  Assassin creed Vahalla is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="accent" [routerLink]="'detail'">Detail</button>
+                <button mat-raised-button color="warn"  (click)="openDialog('1000ms', '0ms')">Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.md="31%" fxFlex.sm="48%"  fxFlex.xs="100%">
+          <mat-card class="matcard">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Far Cry</mat-card-title>
+              <mat-card-subtitle>Game offline</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/farcry.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                Far Cry is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="accent" [routerLink]="'detail'">Detail</button>
+                <button mat-raised-button color="warn"  (click)="openDialog('1000ms', '0ms')">Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.md="31%" fxFlex.sm="48%"  fxFlex.xs="100%">
+          <mat-card class="matcard">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Need for Speed</mat-card-title>
+              <mat-card-subtitle>Game offline</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/nfs.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                  Need for Speed is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="accent" [routerLink]="'detail'">Detail</button>
+                <button mat-raised-button color="warn"  (click)="openDialog('1000ms', '0ms')">Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Game Online">
+      <div class="container" fxLayout fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column" #menu>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/fifa.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      <div class="container" fxLayout fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/LOL.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Application">
+      <div class="container" fxLayout fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column">
+        <div>
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/excel.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/word.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/powerpoint.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div>
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>League Of Legend</mat-card-title>
+              <mat-card-subtitle>Game online</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/pdf.jpg" alt="LOLIMG">
+            <mat-card-content>
+              <p>
+                League of Legends is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS
+                platforms.
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+              <button mat-button>Detail</button>
+              <button mat-button>Dowload</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+  <!-- <mat-paginator class="paging" 
+              [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+  </mat-paginator> -->
+
+
+
+  <!-- <div>
+      <div class=" list-group list-group-horizontal-md break">
+        <game-col *ngFor="let game of games" [game]="game">
+        </game-col>
+      </div>
+    </div> -->
+
+
+
+</div>

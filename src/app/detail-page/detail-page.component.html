@@ -1,0 +1,45 @@
+<div class="container background">
+    <div fxLayout="row">
+        <div fxFlex="45%">
+            <mat-card class="matcard">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Battle Field 2042</mat-card-title>
+                    <mat-card-subtitle>Game offline</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="assets/battlefield.jpg" alt="LOLIMG">
+                <mat-card-content>
+                    <p>
+                        Battle Field is a multiplayer online battle arena video game developed and published by Riot Games on Windows and MacOS platforms.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions fxLayoutAlign="center">
+                    <button mat-raised-button color="accent" [routerLink]="'detail'">Detail</button>
+                    <button mat-raised-button color="warn">Dowload</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="55%" class="detailItem">
+            <h1>Battle Field 2042</h1>
+            <p>Type Game :</p>
+            <a href="">Game offline</a>
+            <p>Price :
+                <span style="color:rgb(52, 214, 52)"> 0$</span>
+            </p>
+            <p> Battle Field is a multiplayer online battle arena video game developed and published by Riot Games on Windows
+                and MacOS platforms.</p>
+            <p>Choose version to dowload</p>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Version</mat-label>
+                    <input type="text" placeholder="Choose version to dowload" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of options" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+</div>
